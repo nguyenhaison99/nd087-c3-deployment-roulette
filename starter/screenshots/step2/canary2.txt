@@ -1,0 +1,12 @@
+kubectl get pods -n udacity
+NAME                           READY   STATUS        RESTARTS      AGE
+blue-7fb6ff6dd9-7kqr8          1/1     Running       0             73m
+blue-7fb6ff6dd9-hv6mw          1/1     Running       0             73m
+blue-7fb6ff6dd9-lnpxj          1/1     Running       0             73m
+canary-v1-bdb7f878d-8l4s2      1/1     Running       0             11m
+canary-v1-bdb7f878d-btk6q      1/1     Running       0             5m11s
+canary-v1-bdb7f878d-rzxjg      1/1     Running       0             5m11s
+canary-v2-755b8b7b9b-h89rn     1/1     Running       0             4m33s
+canary-v2-755b8b7b9b-qjk46     1/1     Running       0             4m33s
+canary-v2-755b8b7b9b-stw2h     1/1     Running       0             4m33s
+hello-world-86cc7df864-7g4s8   1/1     Running       0             66m

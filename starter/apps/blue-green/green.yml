@@ -2,20 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: canary
-  name: canary-v2
+    app: green
+  name: green
   namespace: udacity
 spec:
-  replicas: 0
-  minReadySeconds: 5 # how long it should wait until it creates the next pod.
+  replicas: 3
   selector:
     matchLabels:
-      app: canary
+      app: green
   template:
     metadata:
       labels:
-        app: canary
-        version: "2.0"
+        app: green
     spec:
       containers:
         - name: nginx
@@ -30,4 +28,4 @@ spec:
       volumes:
         - name: configmap-vol
           configMap:
-            name: canary-config-v2
+            name: green-config
